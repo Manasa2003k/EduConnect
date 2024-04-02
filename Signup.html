@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            /* Apply styles to the entire form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 52);
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Remove default focus outline */
+input:focus {
+    outline: none;
+}
+
+/* Add hover effect to submit button */
+button:hover {
+    background-color: #4f48cc;
+}
+
+        </style>
+    </head>
+    <body>
+        <script>
+            function Sub() {
+             alert("Successful Registration!");
+            }
+
+          </script>
+          <div>
+        <h1>Welcome to our city</h1>
+        <h2>Begin your journey with our 3d model of this city</h2>
+        </div>
+        <br>
+        <div>
+            <form action="Home.html" id="f">
+                <label for="name" id="name"> First Name:</label><br>
+                <input type="text"  name="name" placeholder="Your name"><br><br>
+                <label for="name" >Last Name:</label><br>
+                <input  type="text" id="lastname" name="lastname" placeholder="Surname"><br><br>
+                <label for="email">Email:</label><br>
+
+                <input type="text" id="email" name="email" placeholder="Your email"><br><br>
+               <label>Gender</label>
+                 <input type="radio" id="gen" value="male">Male<br><br>
+                <input type="radio" id="gen" value="female">Female<br><br>
+                <label >Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password"  placeholder="Password"><br><br>
+                <br>
+                <button onclick="Sub()" id="n"><b>Submit</b></button>
+            </form>
+        </div>
+        
+    </body>
+</html>
+</html>
