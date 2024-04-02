@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      h1 {
+        font-size: 2em;
+        margin: 0;
+      }
+      
+      nav a {
+        text-decoration: none;
+        margin-right: 20px;
+        color: #333;
+      }
+      
+      main {
+        padding: 40px;
+      }
+      
+      .about-us {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      #team-image {
+        width: 40%;
+        margin-bottom: 20px;
+      }
+      
+      .about-text {
+        width: 60%;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      p {
+        line-height: 1.5;
+      }
+      
+      button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      
+      footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+      }
+  </style>
+</head>
+<body>
+    <script>
+        const showMoreButton = document.getElementById('show-more');
+const aboutText = document.querySelector('.about-text p');
+
+showMoreButton.addEventListener('click', () => {
+  aboutText.classList.toggle('show-more');
+  if (showMoreButton.textContent === 'Read More') {
+    showMoreButton.textContent = 'Show Less';
+  } else {
+    showMoreButton.textContent = 'Read More';
+  }
+});
+    </script>
+  <header>
+    <h1>About Us</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-us">
+      <img id="team-image" src="about.jpg" alt="Team Photo">
+      <div class="about-text">
+        <h2>EduConnect Speciality</h2>
+        <p>Educonnect can refer to various education-related initiatives. It might be a mobile app used in India for student-parent communication, an English language learning program, or a consultancy helping students study abroad. In the context of educational models, Educonnect could describe programs inspired by the Finnish system, which prioritizes student well-being and empowers educators to create engaging learning experiences.</p>
+        <button id="show-more">Read More</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 EduConnect</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
